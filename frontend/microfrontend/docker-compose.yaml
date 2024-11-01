@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  host:
+    build:
+      context: ./host
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8083"
+    depends_on:
+      - auth-mf
+      - gallery-mf
+      - profile-mf
+
+  auth-mf:
+    build:
+      context: ./auth-mf
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+
+  gallery-mf:
+    build:
+      context: ./gallery-mf
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+
+  profile-mf:
+    build:
+      context: ./profile-mf
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
