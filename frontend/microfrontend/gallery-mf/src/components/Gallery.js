@@ -5,8 +5,6 @@ import api from "../utils/api";
 import Card from "./Card";
 import '../styles/card/card.css';
 import '../styles/places/places.css';
-import '../styles/popup/popup.css';
-import '../styles/popup/_is-opened/popup_is-opened.css';
 
 function Gallery({currentUserId, isOpenAddPlace, onCloseAddPlace, className}) {
     const [selectedCard, setSelectedCard] = React.useState(null);

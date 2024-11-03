@@ -64,7 +64,9 @@ module.exports = (_, argv) => ({
     new ModuleFederationPlugin({
       name: "gallery_mf",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        'shared': 'shared_mf@http://localhost:8084/remoteEntry.js'
+      },
       exposes: {
         './Gallery': './src/components/Gallery',
       },

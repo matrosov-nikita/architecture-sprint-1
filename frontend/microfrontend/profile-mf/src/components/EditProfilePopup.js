@@ -1,5 +1,5 @@
 import React from 'react';
-import PopupWithForm from './PopupWithForm';
+import PopupWithForm from 'shared/PopupWithForm';
 import api from "../utils/api";
 
 function EditProfilePopup({ isOpen, onClose, currentUser }) {

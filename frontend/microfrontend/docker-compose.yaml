@@ -32,3 +32,10 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8082:8082"
+
+  shared-mf:
+    build:
+      context: ./shared-mf
+      dockerfile: Dockerfile
+    ports:
+      - "8084:8084"
