@@ -178,4 +178,5 @@ docker-compose up --build
 
 ## Задание 2
 
-https://drive.google.com/file/d/18TxGm5Ao4LfoYQhCeN7DuiSxJH_fvwgc/view?usp=sharing
+https://drive.google.com/file/d/1k4Aoqaq_dQAm-qDAD46PM5P67VLZddTm/view?usp=sharing
+(также файл есть в корне репозитория ветки sprint_1)
